@@ -1,1 +1,16 @@
-<p>products works!</p>
+<div class="filter">
+  home => {{path}}
+</div>
+<div class="dCart">
+  @for (item of cart; track $index) {
+    <app-product [action]="'remove'" (onRemove)="remove($event)" [kala]="item" />
+  }
+</div>
+
+<div class="products">
+  @for (item of products; track $index) {
+    <app-product (onBuy)="buy($event)" [kala]="item" />
+  }
+</div>
+<app-support-fix/>
+

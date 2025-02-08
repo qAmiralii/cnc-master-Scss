@@ -1,0 +1,16 @@
+.products{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.dCart{
+  padding-top: 10vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.filter{
+  background-color: lightgrey;
+  padding: 1vh 0 1vh 2vw ;
+  color: rgb(77, 77, 77);
+}

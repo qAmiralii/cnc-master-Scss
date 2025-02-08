@@ -8,10 +8,11 @@
   transform: translate(-50%, -50%);
   width: 35vw;
   height: 70vh;
-  z-index: 2;
+  z-index: 3;
   background-color: rgb(255, 255, 255);
   border: 0.5px solid gray;
   border-radius: 5%;
+
 }
 
 p {
@@ -78,50 +79,22 @@ menu {}
   background-color: rgb(32, 105, 241);
   border: 0;
 }
-.submitB,.singIn,.closeSVG:hover{
+.submitB,.singsin,.closeSVG.login:hover{
   cursor: pointer;
 }
 .error{
   background-color: pink;
 }
-.goSignIn{
-  margin-top: 2vh;
-
-  width: 100%;
-  text-align: left;
+.goLogin{
+  text-align: right;
 }
-.singIn{
-  float: right;
-  display: inline-block;
+.login{
   color: white;
   border: 0;
   height: 4vh;
   border-radius: 10%;
   background-color: rgb(32, 105, 241);
 }
-.checkbox{
-  display: inline-block;
-}
-#rememberMe{
-  display: inline;
-}
 .closeSVG{
   float: right;
-}
-.backimg{
-  position: fixed;
-  width: 100%;
-  height: 83vh;
-  z-index: 2;
-  box-sizing: border-box;
-  padding-top: 0.5vh;
-}
-.imgback{
-  width: 100%;
-  height: 100%;
-  opacity: 0.8;
-}
-.imgback:hover{
-  transition: all 1s;
-  opacity: 1;
 }

@@ -1,1 +1,41 @@
-<p>header works!</p>
+<div id="headerdiv" class="div-txt">
+  <p id="p1">CNC هنر خلق کردن</p>
+</div>
+<div id="indb">
+  <nav id="menu" class="div-txt">
+    <div class="gg">
+      <button id="login" (click)="showMenu()">Login | Sing up</button>
+    </div>
+    <ul>
+      <li class="nav-li">
+        <li class="nav-li">
+          <a routerLink="/home" class="nav-a" >Home</a>
+        </li>
+        <li class="nav-li">
+        <a class="nav-a" (click)="hide()" id="m-menu">Models
+          @if (showTopMenu) {
+            <ul id="menu-Ul">
+              <li><a>CNC Wood</a></li>
+              <li><a>CNC Laser</a></li>
+              <li><a>3D Model</a></li>
+            </ul>
+          }
+          </a>
+      </li>
+      <li class="nav-li">
+        <a routerLink="/products" class="nav-a">Produts</a>
+      </li>
+      <li class="nav-li">
+        <a routerLink="/support" class="nav-a">Support</a>
+      </li>
+      <li class="nav-li">
+        <a routerLink="/about" class="nav-a">About us</a>
+      </li>
+    </ul>
+    <div class="logo">
+      <img id="im" alt="img"
+      src="/Create a Logo Online _ Free Logo Maker & Generator _ TURBOLOGO and 7 more pages - Person 1 - Microsoft​ Edge 8_5_2024 1_37_07 PM (2).png">
+    </div>
+  </nav>
+</div>
+

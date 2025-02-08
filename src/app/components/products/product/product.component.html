@@ -1,1 +1,21 @@
-<p>product works!</p>
+<div class="kool">
+  <div class="main">
+    <div class="image">
+      <img src="/img/{{kala.pic}}" alt="" id="img">
+    </div>
+    <div class="title">
+      {{kala.title}}
+    </div>
+    <div class="price">
+      {{kala.price}}
+      <button (click)="buy(kala)">
+        @if (action=="buy") {
+          Add to cart
+        }
+        @else if (action=="remove") {
+          remove
+        }
+      </button>
+    </div>
+  </div>
+</div>
