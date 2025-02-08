@@ -1,14 +1,4 @@
-// import { Component } from '@angular/core';
 
-// @Component({
-//   selector: 'app-product',
-//   imports: [],
-//   templateUrl: './product.component.html',
-//   styleUrl: './product.component.scss'
-// })
-// export class ProductComponent {
-
-// }
 import { Component, EventEmitter, Input, input, Output, output } from '@angular/core';
 
 @Component({

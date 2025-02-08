@@ -1,11 +1,11 @@
 import { Component, inject } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, NgModel, } from '@angular/forms';
 import { SingInComponent } from './sing-in/sing-in.component';
 import { Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
-  imports: [],
+  imports: [SingInComponent,FormsModule],
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss'
 })
