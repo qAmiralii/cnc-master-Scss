@@ -12,10 +12,11 @@
 import { Component } from '@angular/core';
 import { ProductComponent } from "./product/product.component";
 import { SupportFixComponent } from "../support-fix/support-fix.component";
+import { FooterComponent } from "../footer/footer.component";
 
 @Component({
   selector: 'app-products',
-  imports: [ProductComponent, SupportFixComponent],
+  imports: [ProductComponent, SupportFixComponent, FooterComponent],
   templateUrl: './products.component.html',
   styleUrl: './products.component.scss'
 })

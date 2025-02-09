@@ -1,9 +1,10 @@
 
 import { Component, EventEmitter, Input, input, Output, output } from '@angular/core';
+import { FooterComponent } from "../../footer/footer.component";
 
 @Component({
   selector: 'app-product',
-  imports: [],
+  imports: [FooterComponent],
   templateUrl: './product.component.html',
   styleUrl: './product.component.scss'
 })

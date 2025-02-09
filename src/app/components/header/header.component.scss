@@ -91,7 +91,7 @@ nav>ul li:hover {
 
 #login {
   position: absolute;
-  top: 1vh;
+  top: 0.8vh;
   left: 5vw;
   border: none;
   background-color: rgb(13, 154, 248);
@@ -120,6 +120,15 @@ nav>ul li:hover {
   position: absolute;
   top: -1.1em;
   right: 3em;
+}
+.basket{
+  width: 2vw;
+  position: absolute;
+  left: 1.5vw;
+  top: 1.1vh;
+  img{
+    width: 100%;
+  }
 }
 
 #p1 {
