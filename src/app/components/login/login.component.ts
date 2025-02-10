@@ -53,13 +53,3 @@ export class LoginComponent {
 
 }
 
-
-// @Component({
-//   selector: 'app-login',
-//   imports: [FormsModule, SingInComponent],
-//   templateUrl: './login.component.html',
-//   styleUrl: './login.component.css'
-// })
-// export class LoginComponent {
-
-// }

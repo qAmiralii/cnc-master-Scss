@@ -1,15 +1,21 @@
 <div class="filter">
   home => {{path}}
 </div>
+<div class="curency">
+  <button (click)="changeCurency()"> Chainge to toman</button>
+</div>
 <div class="dCart">
   @for (item of cart; track $index) {
-    <app-product [action]="'remove'" (onRemove)="remove($event)" [kala]="item" />
+    <div class="test">
+      not working!
+    <app-product [action]="'remove'" (onRemove)="remove($event)" [kala]="item"/>
+  </div>
   }
 </div>
 
 <div class="products">
   @for (item of products; track $index) {
-    <app-product (onBuy)="buy($event)" [kala]="item" />
+    <app-product (onBuy)="buy($event)" [kala]="item" [toman]="change"/>
   }
 </div>
 <app-support-fix/>

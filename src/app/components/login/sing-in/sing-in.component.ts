@@ -1,14 +1,3 @@
-// import { Component } from '@angular/core';
-
-// @Component({
-//   selector: 'app-sing-in',
-//   imports: [],
-//   templateUrl: './sing-in.component.html',
-//   styleUrl: './sing-in.component.scss'
-// })
-// export class SingInComponent {
-
-// }
 import { Component, Output, output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';

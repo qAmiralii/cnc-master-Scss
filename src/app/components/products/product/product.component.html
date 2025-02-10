@@ -6,16 +6,20 @@
     <div class="title">
       {{kala.title}}
     </div>
-    <div class="price">
+  </div>
+  <div class="price">
+    @if (toman) {
       {{kala.price}}
-      <button (click)="buy(kala)">
-        @if (action=="buy") {
-          Add to cart
-        }
-        @else if (action=="remove") {
-          remove
-        }
-      </button>
-    </div>
+    }@else{
+      {{kala.tPrice | number}}
+    }
+    <button (click)="buy(kala)">
+      @if (action=="buy") {
+        Add to cart
+      }
+      @else if (action=="remove") {
+        remove
+      }
+    </button>
   </div>
 </div>
