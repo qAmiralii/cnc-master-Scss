@@ -154,7 +154,6 @@ body {
   font-size: large;
   margin: auto;
   width: 90%;
-  cursor: pointer;
 }
 
 .backimg {
@@ -164,15 +163,6 @@ body {
   background-size: cover;
 }
 
-// .yalda {
-//   margin: auto;
-//   width: 95%;
-// }
-// #yalda-img {
-//   display: inline-block;
-//   width: 100%;
-//   border-radius: 5em;
-// }
 
 #img-home {
   width: 350px;
@@ -218,7 +208,6 @@ body {
 #modeldivs {
   background-image: url('/backimg.png');
   background-attachment: fixed;
-  /* ثابت نگه داشتن عکس */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
