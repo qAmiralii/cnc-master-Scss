@@ -1,5 +1,7 @@
 @media screen and (min-width:460px) {
-
+  #indb {
+    border-bottom: 1px rgb(251, 12, 12) solid;
+  }
 }
 
 
@@ -62,7 +64,8 @@ nav>ul li:hover {
   color: gray;
   font-size: medium;
 }
-#m-menu ul li{
+
+#m-menu ul li {
   padding-bottom: 5px;
 }
 
@@ -113,7 +116,7 @@ nav>ul li:hover {
 }
 
 #im {
-  width: 5.5vw;
+  width: 5vw;
 }
 
 .logo {
@@ -121,12 +124,14 @@ nav>ul li:hover {
   top: -1.1em;
   right: 3em;
 }
-.basket{
+
+.basket {
   width: 2vw;
   position: absolute;
   left: 1.5vw;
   top: 1.1vh;
-  img{
+
+  img {
     width: 100%;
   }
 }

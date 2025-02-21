@@ -11,8 +11,7 @@ import { DecimalPipe } from '@angular/common';
 })
 export class ProductComponent {
 
-  toman = input({});
-  // @Input() toman : boolean
+  @Input() toman=false;
 
 
   @Input() kala: any;
