@@ -119,12 +119,10 @@ body {
   height: 10vh;
   background-color: rgb(236, 182, 74);
   left: 40%;
-
-  #c3 {
-    left: 39%;
-  }
 }
-
+#c3 {
+  left: 35%;
+}
 .yalda-div {
   font-size: large;
   margin: auto;
@@ -139,11 +137,10 @@ body {
 
 
 #img-home {
-  width: 350px;
+  width: 20vw;
 }
 
 #d6 {
-
   width: 100%;
   margin-top: 60px;
   box-sizing: border-box;
@@ -206,7 +203,7 @@ body {
 
 .homeModels {
   width: 25%;
-  height: 60%;
+  height: 65%;
   margin: 8px 8px;
   border-radius: 10px;
   display: inline-block;
@@ -233,7 +230,7 @@ body {
     font-size: large;
   }
 }
-@media (max-width: 950px) {
+@media (max-width: 1000px) {
   #modeldivs {
     background-image: url('/backimg.png');
     background-attachment: fixed;
@@ -251,7 +248,7 @@ body {
   .div-3class {
     background: #f7f7f7;
     display: inline-block;
-    margin: 1em;
+    margin: 3em 0 0 0 ;
     padding: 1em 5em;
     text-align: center;
     position: relative;
@@ -277,12 +274,138 @@ body {
     width: 5vw;
     padding: 0.5em;
     border-radius: 4em;
-    height: 10vh;
+    height: 5.5vh;
     background-color: rgb(236, 182, 74);
-    left: 40%;
+    left: 43%;
 
     #c3 {
       left: 39%;
     }
+  }
+}
+
+@media (min-height: 1050px) {
+  #modeldivs {
+    background-image: url('/backimg.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+
+  }
+
+  .div-3class {
+    background: #f7f7f7;
+    display: inline-block;
+    margin: 3em 0 0 0 ;
+    padding: 1em 5em;
+    text-align: center;
+    position: relative;
+    border-radius: 0.8em;
+  }
+  .homeModels {
+    width: 25%;
+    height: 45%;
+    margin: 8px 8px;
+    border-radius: 10px;
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: black;
+    background: #f7f7f7;
+    transition: width 1s, height 1s;
+  }
+
+  .class-d {
+    position: absolute;
+    display: inline-block;
+    top: -35%;
+    width: 5.5vw;
+    padding: 0.5em;
+    border-radius: 4em;
+    height: 4.5vh;
+    background-color: rgb(236, 182, 74);
+    left: 43%;
+
+    #c3 {
+      left: 39%;
+    }
+  }
+
+}
+
+
+@media (max-width: 450px) {
+  #modeldivs {
+    background-image: url('/backimg.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+
+  }
+
+  #contentt {
+    display: block;
+    margin: auto;
+    color: #f7f7f7;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2.5em;
+    border-radius: 2em;
+    h1{
+      font-size: medium;
+    }
+    p{
+      font-size: small;
+    }
+  }
+
+  .div-3class {
+    background: #f7f7f7;
+    display: inline-block;
+    margin: 3vh 5vw 0 5vw ;
+    padding: 1vh 1vh;
+    text-align: center;
+    position: relative;
+    font-size: small;
+    border-radius: 0.8em;
+  }
+
+  .homeModels {
+    width: 25%;
+    height: 45%;
+    border-radius: 10px;
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: black;
+    background: #f7f7f7;
+    transition: width 1s, height 1s;
+  }
+
+  .class-d {
+    position: absolute;
+    display: inline-block;
+    top: -15%;
+    width: 5vw;
+    padding: 0.5em;
+    border-radius: 4em;
+    height: 2.5vh;
+    background-color: rgb(236, 182, 74);
+    left: 43%;
+
+  }
+  #c3 {
+    left: 45%;
   }
 }
