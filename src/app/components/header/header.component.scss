@@ -56,8 +56,7 @@ nav>ul li:hover {
   display: block;
   position: absolute;
   border: solid rgb(48, 187, 246) 1px;
-  width: 8vw;
-  left: 0;
+  left: -15vw;
   top: 5vh;
   background: white;
   z-index: 2;
@@ -65,11 +64,23 @@ nav>ul li:hover {
   font-size: medium;
 }
 
-#m-menu ul li {
-  padding-bottom: 5px;
+.inMenu{
+  display: none;
+}
+
+.subnav{
+  font-size: medium;
+  background-color: white;
+  padding: 0.5em 1em;
+  border: none;
+  outline: none;
+}
+#menu-Ul a{
+  display: inline-block;
 }
 
 #menu-Ul {
+  width: 30vw;
   padding: 0;
 }
 

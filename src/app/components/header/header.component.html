@@ -18,9 +18,30 @@
         <a class="nav-a" (click)="hide()" id="m-menu">Models
           @if (showTopMenu) {
           <ul id="menu-Ul">
-            <li><a>CNC Wood</a></li>
-            <li><a>CNC Laser</a></li>
-            <li><a>3D Model</a></li>
+            <li>
+              <button class="subnav">
+                <a>CNC Router</a>
+              </button>
+            </li>
+            <div class="inMenu">
+              <a >3D Relief	</a>
+              <a >Wall Panel</a>
+              <a >Table </a>
+              <a >Parametrics</a>
+              <a >Boxes</a>
+              <a >Stamp Making</a>
+              <a >Toys</a>
+            </div>
+            <li>
+              <button class="subnav">
+                <a>Lathe CNC</a>
+              </button>
+            </li>
+            <li>
+              <button class="subnav">
+                <a>Laser Cutting CNC</a>
+              </button>
+              </li>
           </ul>
           }
         </a>
