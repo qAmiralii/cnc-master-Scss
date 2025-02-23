@@ -70,16 +70,20 @@ nav>ul li:hover {
 .subnav {
   text-align: left;
   position: absolute;
+  border-radius: 0.5em;
   display: none;
+  width: 110%;
   font-size: medium;
   background-color: rgb(165, 191, 204);
-  padding: 0.5em 1em;
   border: none;
+  z-index: 1;
   outline: none;
+  a{
+    color: white;
+  }
 }
 .navbar {
   position: relative;
-
   a {
     padding: 0.5em 1em;
   }
@@ -87,17 +91,11 @@ nav>ul li:hover {
 
 .navbar>a:hover+.subnav{
   display: block;
-  a{
-    color: white;
-  }
+
 }
 .subnav:hover{
   display: block;
 }
-
-
-
-
 
 #headerdiv {
   padding: 5px 0 5px 0;
