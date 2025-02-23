@@ -6,7 +6,7 @@ import { HeaderComponent } from "../../header/header.component";
 
 @Component({
   selector: 'app-sing-in',
-  imports: [FormsModule, SupportFixComponent, HeaderComponent],
+  imports: [FormsModule, SupportFixComponent],
   templateUrl: './sing-in.component.html',
   styleUrl: './sing-in.component.scss'
 })

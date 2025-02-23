@@ -5,8 +5,7 @@
 }
 
 
-a,
-#login {
+a,#login {
   text-decoration: none;
   color: rgb(13, 154, 248);
   font-size: 1em;
@@ -39,10 +38,6 @@ a:hover {
   text-decoration: underline;
 }
 
-body {
-  margin: 1px;
-}
-
 nav>ul li {
   display: inline-block;
   position: relative;
@@ -58,35 +53,51 @@ nav>ul li:hover {
   border: solid rgb(48, 187, 246) 1px;
   left: -15vw;
   top: 5vh;
+  border-radius: 0.5em;
   background: white;
-  z-index: 2;
   color: gray;
   font-size: medium;
 }
 
-.inMenu{
-  display: none;
+#menu-Ul {
+  text-align: center;
+  padding: 0;
+  width: 30vw;
+  a{
+    display: inline-block;
+  }
 }
-
-.subnav{
+.subnav {
+  text-align: left;
+  position: absolute;
+  display: none;
   font-size: medium;
-  background-color: white;
+  background-color: rgb(165, 191, 204);
   padding: 0.5em 1em;
   border: none;
   outline: none;
 }
-#menu-Ul a{
-  display: inline-block;
+.navbar {
+  position: relative;
+
+  a {
+    padding: 0.5em 1em;
+  }
 }
 
-#menu-Ul {
-  width: 30vw;
-  padding: 0;
+.navbar>a:hover+.subnav{
+  display: block;
+  a{
+    color: white;
+  }
+}
+.subnav:hover{
+  display: block;
 }
 
-.div-txt {
-  text-align: center;
-}
+
+
+
 
 #headerdiv {
   padding: 5px 0 5px 0;
