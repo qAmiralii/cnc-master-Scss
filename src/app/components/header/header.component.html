@@ -1,5 +1,5 @@
-<div id="headerdiv" class="div-txt">
-  <p id="p1">CNC هنر خلق کردن</p>
+<div id="headerdiv">
+  <p id="p1">CNC Master</p>
 </div>
 <div id="indb">
   <nav id="menu" class="div-txt">
@@ -20,11 +20,10 @@
           <ul id="menu-Ul">
             <li>
               <div class="navbar">
-                <a>CNC Router <i class="fa fa-caret-down"></i></a>
+                <a (click)="Srouter()" routerLink="/products">CNC Router <i class="fa fa-caret-down"></i></a>
                 <div class="subnav">
-                  <a><i class="fa fa-caret-right"></i> CNC Router</a>
-                  <a><i class="fa fa-caret-right"></i> 3D Relief</a>
-                  <a><i class="fa fa-caret-right"></i> Wall Panel</a>
+                  <a (click)="routerP()" routerLink="/products"><i class="fa fa-caret-right"></i> 3D Relief</a>
+                  <a (click)="wallp()"><i class="fa fa-caret-right"></i> Wall Panel</a>
                   <a><i class="fa fa-caret-right"></i> Table</a>
                   <a><i class="fa fa-caret-right"></i> Parametrics</a>
                   <a><i class="fa fa-caret-right"></i> Boxes</a>
@@ -88,7 +87,7 @@
       </li>
     </ul>
     <div class="logo">
-      <img id="im" alt="img" src="/logo.png">
+      <img id="im" alt="img" src="/favicon.ico">
     </div>
   </nav>
 </div>

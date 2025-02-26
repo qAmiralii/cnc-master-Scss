@@ -1,18 +1,29 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { NavigationEnd, Router, RouterLink } from '@angular/router';
-import { ProductsComponent } from '../products/products.component';
-import { LoginComponent } from '../login/login.component';
+import { CncRouterService } from '../servises/products/cnc-router.service';
 
 @Component({
   selector: 'app-header',
-  imports: [LoginComponent , ProductsComponent , RouterLink,],
+  imports: [RouterLink,],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-hide() {
-  this.showTopMenu=!this.showTopMenu;
+wallp() {
+  this.category.category = 1.2;
 }
+  category = inject(CncRouterService)
+  Srouter() {
+    this.category.category = 1;
+  }
+  routerP() {
+    this.category.category = 1.1;
+  }
+
+
+  hide() {
+    this.showTopMenu = !this.showTopMenu;
+  }
   isLoginOpen: boolean = false;
   showTopMenu: boolean = false;
   constructor(private router: Router) {
@@ -26,7 +37,6 @@ hide() {
       }
     });
   }
-
   showMenu() {
     if (this.isLoginOpen) {
       // اگر کامپوننت ورود باز است، به صفحه اصلی برگرد
