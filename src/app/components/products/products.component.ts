@@ -15,7 +15,6 @@ import { SupportFixComponent } from "../support-fix/support-fix.component";
 import { FooterComponent } from "../footer/footer.component";
 import { HeaderComponent } from "../header/header.component";
 import { RouterLink } from '@angular/router';
-import { TestCounterService } from '../servises/test-counter.service';
 import { CncRouterService } from '../servises/products/cnc-router.service';
 
 @Component({
@@ -25,13 +24,7 @@ import { CncRouterService } from '../servises/products/cnc-router.service';
   styleUrl: './products.component.scss'
 })
 export class ProductsComponent {
-  minus() {
-    this.counter.count--;
-  }
-  plus() {
-    this.counter.count++;
-  }
-  counter = inject(TestCounterService);
+
 
   change: boolean = true;
   changeCurency() {
@@ -50,7 +43,6 @@ export class ProductsComponent {
 
 
   produts = this.routerProducts.cncRouterProducts;
-  rProducts = this.routerProducts.routers;
   wallProducts = this.routerProducts.relief;
 
 

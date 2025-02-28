@@ -24,22 +24,7 @@
   <button (click)="changeCurency()"> Chainge to toman</button>
 </div>
 
-<!-- <div>
-  <button (click)="plus()">+</button>
-  <button (click)="minus()">-</button>
-</div>
-<div>
-  {{counter.count}}
-</div> -->
 
-<!--
-<div class="dCart">
-  @for (item of cart; track $index) {
-  <div class="test">
-    <app-product [action]="'remove'" (onRemove)="remove($event)" [kala]="item" />
-  </div>
-  }
-</div> -->
 @if (routerProducts.category==1) {
 <div class="products">
   @for (item of routerProducts.cncRouterProducts; track $index) {
@@ -48,13 +33,13 @@
 </div>
 }
 
-@if (routerProducts.category == 1.1) {
+<!-- @if (routerProducts.category == 1.1) {
   <div class="products">
   @for (item of rProducts; track $index) {
     <app-product (onBuy)="buy($event)" [kala]="item" [toman]="change" />
   }
   </div>
-}
+} -->
 
 @if (routerProducts.category == 1.2) {
   <div class="products">
