@@ -25,7 +25,7 @@
 </div>
 
 
-@if (routerProducts.category==1) {
+@if (routerProducts.category=="CNC Router") {
 <div class="products">
   @for (item of routerProducts.cncRouterProducts; track $index) {
   <app-product (onBuy)="buy($event)" [kala]="item" [toman]="change" />
@@ -33,17 +33,17 @@
 </div>
 }
 
-<!-- @if (routerProducts.category == 1.1) {
+@if (routerProducts.category == "3d animal") {
   <div class="products">
-  @for (item of rProducts; track $index) {
+  @for (item of routerProducts.reliefAnimal; track $index) {
     <app-product (onBuy)="buy($event)" [kala]="item" [toman]="change" />
   }
   </div>
-} -->
+}
 
-@if (routerProducts.category == 1.2) {
+@if (routerProducts.category == "wall panel") {
   <div class="products">
-    @for (item of wallProducts; track $index) {
+    @for (item of routerProducts.wallPanel; track $index) {
       <app-product (onBuy)="buy($event)" [kala]="item" [toman]="change" />
     }
     </div>

@@ -22,11 +22,10 @@
               <div class="navbar">
                 <a (click)="Srouter()" routerLink="/products">CNC Router <i class="fa fa-caret-down"></i></a>
                 <div class="subnav">
-                  <a (click)="routerP()" routerLink="/products"><i class="fa fa-caret-right"></i> 3D Relief</a>
-
+                  <a (click)="reliefRouter()" routerLink="/products"><i class="fa fa-caret-right"></i> 3D Relief</a>
                   <div class="subnav-content">
                     <div class="transform">
-                      <a>Animals</a>
+                      <a (click)="goanimal()">Animals</a>
                       <a>Badges</a>
                       <a>Banners</a>
                       <a>Buildings</a>
@@ -51,28 +50,58 @@
                     </div>
                   </div>
 
-                  <a (click)="wallp()"><i class="fa fa-caret-right"></i> Wall Panel</a>
-
+                  <a (click)="goWallpanel()"><i class="fa fa-caret-right"></i> Wall Panel</a>
                   <div class="subnav-content">
                     <div class="transform">
-                      <a>Animals</a>
-                      <a>Badges</a>
-                      <a>Banners</a>
-                      <a>Buildings</a>
-                      <a>Decorative</a>
-                      <a>Fantasy</a>
-                      <a>Food & Drink</a>
-                      <a>Frames</a>
-                      <a>Music</a>
-                      <a>Nature</a>
-                      <a>Nautical</a>
-
+                      <a>3D Wall Panels</a>
+                      <a>Textured Wall Panels</a>
+                      <a>Decorative Wall Panels</a>
+                      <a>Acoustic Wall Panels</a>
+                      <a>Wooden Wall Panels</a>
+                      <a>Metal Wall Panels</a>
+                      <a>Plastic Wall Panels</a>
+                      <a>Eco-friendly Wall Panels</a>
+                      <a>Wall Murals and Art Panels</a>
+                      <a>Illuminated Wall Panels</a>
+                      <a>Modular Wall Panels</a>
                     </div>
                   </div>
 
                   <a><i class="fa fa-caret-right"></i> Table</a>
+                  <div class="subnav-content">
+                    <div class="transform">
+                      <a>Dining Tables</a>
+                      <a>Coffee Tables</a>
+                      <a>Side Tables</a>
+                      <a>Console Tables</a>
+                      <a>Study Tables</a>
+                      <a>Workbenches</a>
+                      <a>Outdoor Tables</a>
+                      <a>Adjustable Tables</a>
+                      <a>Folding Tables</a>
+                      <a>Nested Tables</a>
+                      <a>Custom CNC Tables</a>
+                    </div>
+                  </div>
+
                   <a><i class="fa fa-caret-right"></i> Parametrics</a>
                   <a><i class="fa fa-caret-right"></i> Boxes</a>
+                  <div class="subnav-content">
+                    <div class="transform">
+                      <a>Gift Boxes</a>
+                      <a>Storage Boxes</a>
+                      <a>Jewelry Boxes</a>
+                      <a>Tool Boxes</a>
+                      <a>Display Boxes</a>
+                      <a>Food  Boxes</a>
+                      <a>Keepsake Boxes</a>
+                      <a>Custom CNC Boxes</a>
+                      <a>Magnetic Closure Boxes</a>
+                      <a>Sliding Lid Boxes</a>
+                      <a>Foldable Boxes</a>
+                    </div>
+                  </div>
+
                   <a><i class="fa fa-caret-right"></i> Stamp Making</a>
                   <a><i class="fa fa-caret-right"></i> Toys</a>
                 </div>
@@ -94,7 +123,7 @@
             <li>
               <div class="navbar">
                 <a>Laser Cutting CNC <i class="fa fa-caret-down"></i></a>
-                <div class="subnav">
+                <div class="subnav" id="special">
                   <a><i class="fa fa-caret-right"></i> Signs</a>
                   <a><i class="fa fa-caret-right"></i> Light Boxes</a>
                   <a><i class="fa fa-caret-right"></i> Tissue Boxes</a>

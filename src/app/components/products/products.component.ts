@@ -43,7 +43,6 @@ export class ProductsComponent {
 
 
   produts = this.routerProducts.cncRouterProducts;
-  wallProducts = this.routerProducts.relief;
 
 
   cart: any[] = [];

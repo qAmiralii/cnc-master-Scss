@@ -190,7 +190,13 @@ nav>ul li:hover {
 
 
 }
-
+#special{
+  width: 33vw;
+  a{
+    width: 8vw;
+    display: inline-block;
+  }
+}
 .subnav-content {
   transition: all 0.8s;
   height: 0;
