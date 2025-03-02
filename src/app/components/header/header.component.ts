@@ -11,16 +11,16 @@ import { CncRouterService } from '../servises/products/cnc-router.service';
 export class HeaderComponent {
   category = inject(CncRouterService)
   goanimal() {
-    this.category.category = "3d animal"
+    this.category.menucategory = "reliefAnimal"
   }
   goWallpanel() {
-    this.category.category = "wall panel";
+    this.category.menucategory = "wallPanel";
   }
   Srouter() {
-    this.category.category = "CNC Router";
+    this.category.menucategory = "cncRouterProducts";
   }
   reliefRouter() {
-    this.category.category = "relief";
+    this.category.menucategory = "relief";
   }
 
 

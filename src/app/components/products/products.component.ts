@@ -1,14 +1,3 @@
-// import { Component } from '@angular/core';
-
-// @Component({
-//   selector: 'app-products',
-//   imports: [],
-//   templateUrl: './products.component.html',
-//   styleUrl: './products.component.scss'
-// })
-// export class ProductsComponent {
-
-// }
 import { Component, inject, output } from '@angular/core';
 import { ProductComponent } from "./product/product.component";
 import { SupportFixComponent } from "../support-fix/support-fix.component";
@@ -40,9 +29,11 @@ export class ProductsComponent {
 
 
   routerProducts = inject(CncRouterService)
+  category: any[] = this.routerProducts.cncRouterProducts.filter(x => x.category == this.routerProducts.menucategory)
 
 
-  produts = this.routerProducts.cncRouterProducts;
+
+
 
 
   cart: any[] = [];
