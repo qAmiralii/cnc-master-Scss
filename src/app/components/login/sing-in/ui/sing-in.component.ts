@@ -1,12 +1,12 @@
 import { Component, Output, output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
-import { SupportFixComponent } from "../../support-fix/support-fix.component";
-import { HeaderComponent } from "../../header/header.component";
+import { SupportFixComponent } from "../../../support-fix/support-fix.component";
+import { HeaderComponent } from '../../../header/ui/header.component';
 
 @Component({
   selector: 'app-sing-in',
-  imports: [FormsModule, SupportFixComponent],
+  imports: [FormsModule, SupportFixComponent,HeaderComponent],
   templateUrl: './sing-in.component.html',
   styleUrl: './sing-in.component.scss'
 })

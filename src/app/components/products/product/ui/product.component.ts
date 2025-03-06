@@ -1,11 +1,11 @@
 
 import { Component, EventEmitter, Input, input, Output, output } from '@angular/core';
-import { FooterComponent } from "../../footer/footer.component";
+import { FooterComponent } from "../../../footer/ui/footer.component";
 import { DecimalPipe } from '@angular/common';
 
 @Component({
   selector: 'app-product',
-  imports: [FooterComponent,DecimalPipe],
+  imports: [DecimalPipe],
   templateUrl: './product.component.html',
   styleUrl: './product.component.scss'
 })

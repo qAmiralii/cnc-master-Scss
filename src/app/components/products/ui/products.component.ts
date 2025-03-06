@@ -1,10 +1,10 @@
 import { Component, inject, output } from '@angular/core';
-import { ProductComponent } from "./product/product.component";
-import { SupportFixComponent } from "../support-fix/support-fix.component";
-import { FooterComponent } from "../footer/footer.component";
-import { HeaderComponent } from "../header/header.component";
+import { ProductComponent } from "../product/ui/product.component";
+import { SupportFixComponent } from "../../support-fix/support-fix.component";
+import { FooterComponent } from "../../footer/ui/footer.component";
 import { RouterLink } from '@angular/router';
-import { CncRouterService } from '../servises/products/cnc-router.service';
+import { CncRouterService } from '../../servises/products/cnc-router.service';
+import { HeaderComponent } from '../../header/ui/header.component';
 
 @Component({
   selector: 'app-products',

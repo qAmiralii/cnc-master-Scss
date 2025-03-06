@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { NavigationEnd, Router, RouterLink } from '@angular/router';
-import { CncRouterService } from '../servises/products/cnc-router.service';
+import { CncRouterService } from '../../servises/products/cnc-router.service';
 
 @Component({
   selector: 'app-header',
