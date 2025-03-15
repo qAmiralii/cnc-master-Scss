@@ -13,17 +13,8 @@ export class ProductComponent {
 
   @Input() toman=false;
 
-
   @Input() kala: any;
-  @Output() onBuy = new EventEmitter<any>;
   @Output() onRemove = new EventEmitter<any>;
-  @Input() action = "buy";
-  buy(y: any) {
-    if (this.action == "buy") {
-      this.onBuy.emit(y);
-    }
-    else {
-      this.onRemove.emit(y);
-    }
-  }
+  @Output() ontest = new EventEmitter<any>;
+
 }

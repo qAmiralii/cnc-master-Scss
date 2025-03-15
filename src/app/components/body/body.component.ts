@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { NavigationEnd, Router, RouterLink } from '@angular/router';
-import { SupportFixComponent } from '../../support-fix/support-fix.component';
-import { FooterComponent } from '../../footer/ui/footer.component';
-import { HeaderComponent } from '../../header/ui/header.component';
+import { SupportFixComponent } from '../support-fix/support-fix.component';
+import { FooterComponent } from '../footer/ui/footer.component';
+import { HeaderComponent } from '../header/ui/header.component';
 
 
 @Component({

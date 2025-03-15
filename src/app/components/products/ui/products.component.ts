@@ -5,6 +5,7 @@ import { FooterComponent } from "../../footer/ui/footer.component";
 import { RouterLink } from '@angular/router';
 import { CncRouterService } from '../../servises/products/cnc-router.service';
 import { HeaderComponent } from '../../header/ui/header.component';
+import { CncWoodService } from '../../servises/products/cnc-wood.service';
 
 @Component({
   selector: 'app-products',
@@ -14,27 +15,15 @@ import { HeaderComponent } from '../../header/ui/header.component';
 })
 export class ProductsComponent {
 
-
   change: boolean = true;
   changeCurency() {
     this.change = !this.change;
   }
-  path: string = "all";
-  remove($event: any) {
-    this.cart = this.cart.filter(m => m != $event)
+  path: string = '';
+  constructor() {
+    this.path = this.routerProducts.menucategory;
   }
-  buy($event: any) {
-    this.cart.push($event)
-  }
-
 
   routerProducts = inject(CncRouterService)
-  category: any[] = this.routerProducts.cncRouterProducts.filter(x => x.category == this.routerProducts.menucategory)
 
-
-
-
-
-
-  cart: any[] = [];
 }
