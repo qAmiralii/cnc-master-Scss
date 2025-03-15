@@ -21,9 +21,10 @@ export class ProductsComponent {
   }
   path: string = '';
   constructor() {
-    this.path = this.routerProducts.menucategory;
+    this.path = this.filter.menucategory;
   }
 
-  routerProducts = inject(CncRouterService)
+  filter = inject(CncRouterService)
+  modelProducts = inject(CncRouterService).cncProducts.filter(x => x.category == this.filter.menucategory)
 
 }
