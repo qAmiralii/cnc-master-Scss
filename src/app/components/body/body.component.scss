@@ -1,9 +1,4 @@
 
-
-body {
-  margin: 1px;
-}
-
 .div-txt {
   text-align: center;
 }
@@ -13,7 +8,6 @@ body {
   width: 100%;
   box-sizing: border-box;
   height: 100%;
-  background: #f7f7f7;
 }
 
 #headerdiv {
@@ -28,6 +22,29 @@ body {
   margin: 3px;
   padding-bottom: 18px;
   height: 100%;
+}
+#ind6img {
+  display: inline-block;
+  box-sizing: border-box;
+  height: 100%;
+
+}
+
+#ind6p {
+  display: inline-block;
+  box-sizing: border-box;
+  height: 100%;
+  text-align: center;
+  text-align: left;
+  h1{
+    color: rgb(220, 164, 52);
+  }
+  h2{
+    color: gray;
+  }
+}
+.slider{
+  display: inline-block;
 }
 
 #menu {
@@ -49,37 +66,7 @@ body {
 
 }
 
-#d5 {
-  display: inline;
-}
 
-#im {
-  float: right;
-  width: 80px;
-  margin-right: 10px;
-  box-sizing: border-box;
-}
-
-
-#p1 {
-  color: white;
-}
-
-#ind6img {
-  display: inline-block;
-  box-sizing: border-box;
-  height: 100%;
-  width: 49%;
-}
-
-#ind6p {
-  display: inline-block;
-  width: 50%;
-  box-sizing: border-box;
-  height: 50%;
-  position: absolute;
-  text-align: center;
-}
 
 #wp {
   font-size: 30px;
