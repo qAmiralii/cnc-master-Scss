@@ -1,0 +1,27 @@
+.rowOfNews {
+    display: flex;
+    background-color: rgb(238, 235, 235);
+    margin: 1em 0 1em 0.5em;
+    border-radius: 1em;
+    position: relative;
+
+    .title {
+        h2 {
+            margin: 0;
+        }
+    }
+
+    button {
+        position: absolute;
+        right: 1%;
+        bottom: 10%;
+        border: none;
+        border-radius: 0.5em;
+        background-color: rgb(245, 157, 101);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    }
+}
+button,.title:hover{
+    cursor: pointer;
+}

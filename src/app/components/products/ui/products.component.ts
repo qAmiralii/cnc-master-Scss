@@ -5,7 +5,6 @@ import { FooterComponent } from "../../footer/ui/footer.component";
 import { RouterLink } from '@angular/router';
 import { CncRouterService } from '../../servises/products/cnc-router.service';
 import { HeaderComponent } from '../../header/ui/header.component';
-import { CncWoodService } from '../../servises/products/cnc-wood.service';
 
 @Component({
   selector: 'app-products',

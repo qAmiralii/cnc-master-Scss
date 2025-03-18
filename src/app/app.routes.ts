@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 import { SingInComponent } from './components/login/sing-in/ui/sing-in.component';
 import { LoginComponent } from './components/login/ui/login.component';
 import { ProductsComponent } from './components/products/ui/products.component';
-import { NewsComponent } from './pages/news/news.component';
+import { NewsComponent } from './pages/news/ui/news.component';
 import { BodyComponent } from './components/body/body.component';
 import { SupportComponent } from './pages/support/support.component';
 import { AboutComponent } from './pages/about/about.component';

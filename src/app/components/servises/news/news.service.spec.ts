@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { CncWoodService } from './cnc-wood.service';
+import { NewsService } from './news.service';
 
-describe('CncWoodService', () => {
-  let service: CncWoodService;
+describe('NewsService', () => {
+  let service: NewsService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(CncWoodService);
+    service = TestBed.inject(NewsService);
   });
 
   it('should be created', () => {
