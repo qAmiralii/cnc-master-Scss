@@ -25,11 +25,11 @@
 </div>
 
 
-    <div class="products">
-      @for (item of modelProducts ; track $index) {
-        <app-product  [kala]="item" [toman]="change" />
-      }
-    </div>
+<div class="products">
+  @for (item of modelProducts ; track $index) {
+  <app-product [kala]="item" [toman]="change" (onBuy)="buy($event)" />
+  }
+</div>
 
 <app-support-fix />
 <app-footer />

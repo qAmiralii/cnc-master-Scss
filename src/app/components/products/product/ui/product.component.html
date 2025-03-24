@@ -1,7 +1,9 @@
 <div class="kool">
   <div class="main">
     <div class="image">
-      <img src="/img/{{kala.pic}}" alt="" id="img">
+      @defer () {
+        <img src="/img/{{kala.pic}}" alt="" id="img">
+      }
     </div>
     <div class="title">
       {{kala.title}}
@@ -11,12 +13,17 @@
     @if (toman) {
       {{kala.price}}
     }@else{
-      {{kala.tPrice | number}}
+      {{kala.tprice | number}}
     }
-    <button>
-
+    @if (isInBasket) 
+    {
+      <button (click)="onRemove.emit(kala)">
+        Remove
+      </button>
+    }@else {
+      <button (click)="onBuy.emit(kala)">
         Add to cart
-
-    </button>
+      </button>
+    }
   </div>
 </div>
