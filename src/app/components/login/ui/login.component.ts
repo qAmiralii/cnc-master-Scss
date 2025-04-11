@@ -1,56 +1,38 @@
 import { Component, inject } from '@angular/core';
-import { FormsModule, NgModel, } from '@angular/forms';
-import { SingInComponent } from '../sing-in/ui/sing-in.component';
-import { Route, Router } from '@angular/router';
-import { HeaderComponent } from '../../header/ui/header.component';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { AsyncPipe } from '@angular/common';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { MatIconModule } from '@angular/material/icon';
+import { Observable } from 'rxjs';
+import { map, shareReplay } from 'rxjs/operators';
+import {MatCardModule} from '@angular/material/card';
 
 @Component({
   selector: 'app-login',
-  imports: [SingInComponent, FormsModule, HeaderComponent],
+  imports: [
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatListModule,
+    MatIconModule,
+    AsyncPipe,
+    MatCardModule,
+  ],
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss'
 })
 export class LoginComponent {
-  Sback($event: void) {
-    this.showSignIn = false;
-  }
-  constructor(private router: Router) { }
-  closeLogin() {
-    this.router.navigate(['/home']);
-  }
-  showSignIn: boolean = false;
-  goSignIn() {
-    this.showSignIn = !this.showSignIn;
-  }
-  ifInputFill = {
-    error: false,
-  }
-  show: boolean = false;
-  ifMenuClick = {
-    sMenuClick: !this.show,
-  }
-  inputCheck() {
-    if (this.Repassword == "") {
-      this.ifInputFill.error = true
-      console.log("karmenikone");
-    }
-  }
-  checkUser() {
-    if (this.password !== this.Repassword) {
-      console.log("ramz dorost nist!")
-    }
-  }
-  reset() {
-    this.username = this.password = this.Repassword = "";
-  }
-  SL: string = "Sign Up"
-  onLogin() {
 
-  }
-  username: string = "";
-  password: string = "";
-  Repassword: string = "";
 
+  private breakpointObserver = inject(BreakpointObserver);
+
+  isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
+    .pipe(
+      map(result => result.matches),
+      shareReplay()
+    );
 
 }
-
