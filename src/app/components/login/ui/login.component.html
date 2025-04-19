@@ -1,4 +1,34 @@
 <mat-card [class.mobile]="(isHandset$ | async)" appearance="outlined">
-    <mat-card-content>Simple card</mat-card-content>
+  <form >
+    <h2>MEMBER Login</h2>
+    <mat-card-content>
+      <div class="input">
+        <mat-form-field appearance="outline">
+          <mat-label>Username</mat-label>
+          <input matInput placeholder="Name">
+          <mat-icon matSuffix>person</mat-icon>
+          <!-- <mat-hint>UserName</mat-hint> -->
+        </mat-form-field>
+      </div>
+      <div class="input">
+        <mat-form-field appearance="outline">
+          <mat-label>Password</mat-label>
+          <input matInput placeholder="Pass">
+          <mat-icon matSuffix>lock</mat-icon>
+          <!-- <mat-hint>UserName</mat-hint> -->
+        </mat-form-field>
+      </div>
+      <div class="button">
+        <button mat-flat-button>Submit</button>
+      </div>
+      <div class="forget">
+        Forgot Password?
+        <a href="#">Click Here</a>
+      </div>
+      <div class="button">
+      <button mat-raised-button>Register</button>
+      </div>
+    </mat-card-content>
+  </form> 
   </mat-card>
   
