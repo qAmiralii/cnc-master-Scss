@@ -11,6 +11,9 @@ import { map, shareReplay } from 'rxjs/operators';
 import {MatCardModule} from '@angular/material/card';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import { FormsModule } from '@angular/forms';
+import { Login } from '../models/login';
 
 @Component({
   selector: 'app-login',
@@ -24,12 +27,24 @@ import {MatInputModule} from '@angular/material/input';
     MatIconModule,
     AsyncPipe,
     MatCardModule,
+    MatCheckboxModule,
+    FormsModule,
   ],
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss'
 })
 export class LoginComponent {
-
+  Login:Login = {
+    username: '',
+    password: '',
+    keepMe: false
+  }
+  isValid(){
+    if (this.Login.username.trim()=='' || this.Login.password=='') {
+      return true;
+    }
+    return false;
+  }
 
   private breakpointObserver = inject(BreakpointObserver);
 

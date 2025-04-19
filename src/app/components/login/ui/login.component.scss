@@ -1,19 +1,33 @@
 :host{
+
+}
+mat-checkbox{
+    margin: 0 2em;
+}
+.back{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-    background-image: url("/img/W0PNcJ.jpg");
+    
+    background-image: url("/img/wp4511436.jpg");
+    position: sticky;
+    width: 100%;
+    height: 100%;
+    
 }
-h2{
+    h2{
     text-align: center;
+}
+mat-card{
+    background-color: rgba(255, 255, 255, 0.823);
 }
 mat-card{
     width: 30%;
     .button{
-
+        margin-bottom: 0.5em;
         button{
-            width: 75%;
+            width: 85%;
         }
         text-align: center;
     }
