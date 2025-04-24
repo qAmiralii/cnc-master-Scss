@@ -1,4 +1,3 @@
-
 a,
 #login {
   text-decoration: none;
@@ -43,6 +42,11 @@ nav>ul li:hover {
 #menu-Ul {
   text-align: center;
   padding: 0;
+  border: solid 1px rgb(85, 167, 208);
+  border-radius: 0.3em;
+  position: absolute;
+  left: 35%;
+
 }
 
 .subnav {
@@ -65,14 +69,16 @@ nav>ul li:hover {
 }
 
 .navbar {
-  position: absolute;
-  left: 40%;
-  border: solid 1px rgb(85, 167, 208);
-  border-radius: 0.3em;
-  width: 20vw;
-  a {
-    padding: 0.5em 1em;
+  position: relative;
+  width: 10vw;
+  .subnav {
+    a {
+      padding: 0.4em 1em;
+    }
   }
+}
+#menu-Ul > li{
+  display: inline-block;
 }
 
 .navbar>a:hover+.subnav {
@@ -111,18 +117,6 @@ nav>ul li:hover {
 }
 
 
-
-.basket {
-  width: 2vw;
-  position: absolute;
-  left: 1.5vw;
-  top: 1.1vh;
-
-  img {
-    width: 100%;
-  }
-}
-
 #p1 {
   color: white;
 }
@@ -138,7 +132,7 @@ nav>ul li:hover {
   display: block;
   height: 40vh;
 
-  .transform{
+  .transform {
     display: block;
   }
 }
@@ -146,20 +140,24 @@ nav>ul li:hover {
 .subnav-content:hover {
   display: block;
   height: 40vh;
-  .transform{
+
+  .transform {
     display: block;
     width: 28vw;
   }
 
 
 }
-#special{
+
+#special {
   width: 33vw;
-  a{
+
+  a {
     width: 8vw;
     display: inline-block;
   }
 }
+
 .subnav-content {
   transition: all 0.8s;
   height: 0;
@@ -178,7 +176,8 @@ nav>ul li:hover {
     color: rgb(0, 0, 0);
     display: inline-block;
   }
-  .transform{
+
+  .transform {
     display: none;
   }
 }
