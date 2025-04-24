@@ -1,9 +1,3 @@
-@media screen and (min-width:460px) {
-  #indb {
-    border-bottom: 1px rgb(251, 12, 12) solid;
-  }
-}
-
 
 a,
 #login {
@@ -15,22 +9,10 @@ a,
   border-bottom: 1px gray solid;
 }
 
-.nav-a {
-  display: inline-block;
-  font-size: 1.2em;
-}
 
-#nav-a1 {
-  margin-left: 3em;
-}
 
-.nav-li {
-  margin-left: 1em;
-}
 
-a:active {
-  color: blue;
-}
+
 
 a:hover {
   color: black;
@@ -61,7 +43,6 @@ nav>ul li:hover {
 #menu-Ul {
   text-align: center;
   padding: 0;
-  width: 30vw;
 }
 
 .subnav {
@@ -84,8 +65,11 @@ nav>ul li:hover {
 }
 
 .navbar {
-  position: relative;
-
+  position: absolute;
+  left: 40%;
+  border: solid 1px rgb(85, 167, 208);
+  border-radius: 0.3em;
+  width: 20vw;
   a {
     padding: 0.5em 1em;
   }
@@ -164,6 +148,7 @@ nav>ul li:hover {
   height: 40vh;
   .transform{
     display: block;
+    width: 28vw;
   }
 
 
