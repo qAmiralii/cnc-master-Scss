@@ -8,7 +8,6 @@
 a,
 #login {
   text-decoration: none;
-  color: rgb(13, 154, 248);
   font-size: 1em;
 }
 
@@ -117,24 +116,7 @@ nav>ul li:hover {
   position: relative;
 }
 
-#login {
-  position: absolute;
-  top: 0.8vh;
-  left: 5vw;
-  border: none;
-  background-color: rgb(13, 154, 248);
-  color: white;
-  border-radius: 0.5em;
-  padding: 0.6em;
-  transition: all 1s;
-}
 
-#login:hover {
-  cursor: pointer;
-  background-color: white;
-  color: rgb(13, 154, 248);
-
-}
 
 #d5 {
   display: inline;
@@ -144,11 +126,7 @@ nav>ul li:hover {
   width: 100%;
 }
 
-.logo {
-  position: absolute;
-  top: 0;
-  right: 3em;
-}
+
 
 .basket {
   width: 2vw;
