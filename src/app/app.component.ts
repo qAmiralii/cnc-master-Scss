@@ -18,9 +18,8 @@ export class AppComponent {
   // router = @inject(Router);     چرا این کار نمی کند
 
   ngOnInit() {
-    this.router.events.subscribe((event) => {
-      if (event instanceof NavigationEnd) {
-        // Initialize Flowbite پس از هر نویگیت
+    this.router.events.subscribe((x) => {
+      if (x instanceof NavigationEnd) {
         initFlowbite();
       }
     });
